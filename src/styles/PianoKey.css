@@ -1,0 +1,32 @@
+.pianoKey {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+    padding-bottom: 1.5em;
+}
+
+.pianoKey--white {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-size: var(--fs-base);
+}
+
+.pianoKey--white:hover {
+    background-color: var(--color-secondaryHover);
+
+}
+.pianoKey--black {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    /* border: 1px solid var(--color-secondary); */
+    height: 60%;
+    z-index: 1;
+    font-size: var(--fs-xs);
+}
+
+.pianoKey--black:hover {
+    background-color: var(--color-primaryHover);
+}
