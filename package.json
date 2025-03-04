@@ -26,5 +26,6 @@
     "globals": "^15.15.0",
     "neostandard": "^0.12.1",
     "vite": "^6.2.0"
-  }
+  },
+  "homepage": "https://danicostas-xyz.github.io/pianoapp-react"
 }
