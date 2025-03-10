@@ -7,10 +7,10 @@ import piano from '../assets/piano.mp3'
 import useSound from 'use-sound'
 
 export default function Piano (props) {
-  const obj = Object.fromEntries(OCTAVAS.map(e => [e.note, [e.start, e.duration]]))
+  const keyMapping = Object.fromEntries(OCTAVAS.map(e => [e.note, [e.start, e.duration]]))
 
   const [play] = useSound(piano, {
-    sprite: obj
+    sprite: keyMapping
   })
 
   return (

@@ -19,8 +19,8 @@ export default function PianoKey (props) {
 
   return (
     <div
-      className={`pianoKey pianoKey--${props.type}`}
-      style={isPressed ? { gridColumn: props.gridColumn, backgroundColor: '#e33333' } : { gridColumn: props.gridColumn }}
+      className={isPressed ? `pianoKey pianoKey--${props.type} pianoKey--pressed` : `pianoKey pianoKey--${props.type}`}
+      style={{ gridColumn: props.gridColumn }}
       onMouseDown={handlerOnMouseDown}
       onMouseUp={handlerOnMouseUp}
       onMouseLeave={handlerOnMouseLeave}
