@@ -9,6 +9,5 @@
     border-radius: 12px;
 	scrollbar-width: thin; 
     scrollbar-color: var(--color-accent) var(--color-primary);
+	overflow-y: hidden;
 }
-
-
